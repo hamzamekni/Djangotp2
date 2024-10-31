@@ -1,0 +1,7 @@
+
+{% load crispy_forms_tags %}
+<form method="post">
+    {% csrf_token %}
+    {{ mycontactform2|crispy }}
+    <button type="submit">Submit</button>
+</form>
